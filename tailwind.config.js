@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pacifico: ['Pacifico', 'cursive']
+        pacifico: ['Pacifico', 'cursive'],
+        fredoka: ['Fredoka', 'sans-serif']
       },
     },
   },

@@ -14,7 +14,7 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl md:text-6xl mb-4 text-left font-pacifico"
+            className="text-5xl md:text-6xl mb-4 text-left font-fredoka"
           >
             Hello! I am Lukas Hu
           </motion.h1>
@@ -22,7 +22,7 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-xl md:text-2xl mb-4 text-left font-pacifico"
+            className="text-xl md:text-2xl mb-4 text-left font-fredoka"
           >
             Dedicated software engineer seeking to make a positive impact with the tools at his disposal. Constantly looking for ways to learn and add more skills to his arsenal.
           </motion.p>
