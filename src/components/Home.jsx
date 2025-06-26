@@ -5,10 +5,9 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex flex-col justify-between items-center text-white pt-12 px-6 bg-gradient-to-r from-green-700 via-blue-500 to-red-500"
+      className="w-full min-h-screen flex flex-col justify-between items-center text-white pt-12 px-6"
     >
       <div className="flex flex-row items-center justify-center w-full max-w-6xl px-6">
-        {/* Left: Text */}
         <div className="w-1/2 p-4 flex flex-col justify-center mx-auto">
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
@@ -56,7 +55,6 @@ export default function Home() {
             I can speak JavaScript, Python, C/C++ proficiently.
           </motion.p>
         </div>
-        {/* Right: (Optional) Leave empty or add image/graphic */}
         <div className="w-1/2 p-4"></div>
       </div>
       <div className="mb-6 flex flex-col items-center text-white">

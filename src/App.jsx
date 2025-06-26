@@ -8,7 +8,7 @@ import './index.css';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-r from-green-700 via-blue-500 to-red-500 overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-california overflow-x-hidden">
       <Navbar />
       <main className="flex-grow container mx-auto px-4">
         <Routes>
