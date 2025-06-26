@@ -1,11 +1,19 @@
-import { useState } from 'react';
-
-export default function TextArea({ text, heading }) {
+export default function TextArea({ heading, children }) {
   return (
-    <div className="max-w-xl mx-auto my-8 px-4">
-      <h2 className="text-xl font-semibold mb-3 text-gray-800">{heading}</h2>
-      <div className="w-full p-6 bg-white rounded-md shadow-md text-gray-900 whitespace-pre-wrap">
-        {text}
+    <div className="education-section my-12">
+      <div className="flex flex-col items-center justify-center text-center">
+        <div className="heading-img-div mb-4">{/* optional image */}</div>
+        <h1 className="text-4xl font-bold text-[#5d2a42]">{heading}</h1>
+      </div>
+
+      <div className="mt-8 p-6 rounded-xl shadow-lg bg-[rgba(226,159,149,0.2)] max-w-4xl mx-auto text-[#5d2a42]">
+        {typeof children === "string" ? (
+          <div className="whitespace-pre-wrap bg-white p-6 rounded-md shadow-md text-gray-900">
+            {children}
+          </div>
+        ) : (
+          children
+        )}
       </div>
     </div>
   );
