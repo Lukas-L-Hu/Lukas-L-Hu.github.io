@@ -27,7 +27,10 @@ export default function Home() {
           </motion.p>
         </div>
         <div className="w-1/2 p-4">
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
             src="/bubbles.jpg"
             alt="Decorative"
             className="w-full h-auto rounded-lg shadow-lg"
