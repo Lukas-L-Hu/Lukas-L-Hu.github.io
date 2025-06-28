@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <div>
+    <div className="flex flex-col gap-y-16 pt-16 pb-20">
     <TextArea heading="Get to Know Me">
       <h2>Originally from the Washington, D.C. area, I have lived on the West Coast in both Las Vegas, NV and Orange County, CA. While I am still an East
         Coast kid at heart, I have really enjoyed life in the West. I have also had the privilege of traveling the world to places such as Taiwan, Austria, the Philippines, 

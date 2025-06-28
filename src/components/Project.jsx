@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-export default function ProjectCard({ title, description, imageUrl, techStack }) {
+export default function Project({ title, description, imageUrl, techStack }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <div
-      className="flip-card w-80 h-96"
+      className="flip-card w-80 h-96 group cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div className={`flip-inner ${isFlipped ? "flipped" : ""}`}>
-        <div className="flip-front bg-white shadow-lg rounded-lg p-4">
+        <div className="flip-front bg-white shadow-lg rounded-lg p-4 flex flex-col">
           {imageUrl && (
             <img
               src={imageUrl}
@@ -17,9 +17,9 @@ export default function ProjectCard({ title, description, imageUrl, techStack })
               className="w-full h-36 object-cover rounded mb-4"
             />
           )}
-          <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
+          <h1 className="text-xl font-bold text-black-900 mb-2">{title}</h1>
           {techStack && (
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap justify-center gap-2">
               {techStack.map((tech, index) => (
                 <li
                   key={index}
@@ -30,12 +30,13 @@ export default function ProjectCard({ title, description, imageUrl, techStack })
               ))}
             </ul>
           )}
+          {!isFlipped && (<p className="mt-auto text-sm text-center text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click to see the description of the project</p>)}
         </div>
 
         {/* Back */}
         <div className="flip-back bg-gray-100 shadow-lg rounded-lg p-4">
-          <h2 className="text-xl font-bold text-gray-800 mb-2">About</h2>
-          <p className="text-gray-700">{description}</p>
+          <h2 className="text-xl font-bold text-gray-800 mb-2"></h2>
+          <p className="text-gray-700 text-center">{description}</p>
         </div>
       </div>
     </div>
