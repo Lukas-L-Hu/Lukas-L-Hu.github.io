@@ -3,10 +3,10 @@ export default function TextArea({ heading, children }) {
     <div className="education-section my-12">
       <div className="flex flex-col items-center justify-center text-center">
         <div className="heading-img-div mb-4">{/* optional image */}</div>
-        <h1 className="text-4xl font-bold text-[#5d2a42]">{heading}</h1>
+        <h1 className="text-4xl font-fredoka text-[#5d2a42]">{heading}</h1>
       </div>
 
-      <div className="mt-8 p-6 rounded-xl shadow-lg bg-[rgba(226,159,149,0.2)] max-w-4xl mx-auto text-[#5d2a42]">
+      <div className="mt-8 p-6 rounded-xl shadow-lg bg-[#f4e2d8] max-w-4xl mx-auto text-[#5d2a42]">
         {typeof children === "string" ? (
           <div className="whitespace-pre-wrap bg-white p-6 rounded-md shadow-md text-gray-900">
             {children}
