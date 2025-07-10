@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import TextArea from "./TextArea";
-
+import { Typewriter } from 'react-simple-typewriter';
 export default function Home() {
   return (
     <>
@@ -11,13 +10,24 @@ export default function Home() {
     >
       <div className="flex flex-row items-center justify-center w-full max-w-6xl px-6">
         <div className="w-1/2 p-4 flex flex-col justify-center mx-auto">
+          {/* <motion.h3 initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}>
+              Hello! I am...
+          </motion.h3> */}
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             className="text-6xl md:text-7xl mb-4 text-left font-fredoka"
           >
-            <div className="whitespace-nowrap text-7xl">Lukas Hu</div>
+            <Typewriter
+              words={['Lukas Hu']}
+              loop={false}
+              cursor
+              cursorStyle="_"
+              typeSpeed={100}
+            />
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -50 }}
@@ -49,7 +59,7 @@ export default function Home() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="text-8xl font-fredoka text-center mb-8"
+          className="text-6xl font-fredoka text-center mb-8"
         >
           About Me
         </motion.h1>
@@ -64,24 +74,8 @@ export default function Home() {
         </motion.p> */}
       </div>
       <div className="flex flex-col gap-y-16 pt-16 pb-20">
-          <TextArea heading="Get to Know Me">
-            <h2>Originally from the Washington, D.C. area, I have lived on the West Coast in both Las Vegas, NV and Orange County, CA. While I am still an East
-              Coast kid at heart, I have really enjoyed life in the West. I have also had the privilege of traveling the world to places such as Taiwan, Austria, the Philippines, 
-              and the United Arab Emirates. I enjoy working anywhere and getting to experience new places.
-            </h2>
-            <br></br>
-            <h2>
-              In my free time I enjoy playing sports such as basketball, swimming, and tennis. In addition to playing sports,
-              I also consider myself a big sports fan. Growing up in the Greater Baltimore-Washington area, my allegiances are to the Baltimore Ravens, Washington Nationals,
-              Washington Capitals, Washington Wizards, and D.C. United.
-            </h2>
-            <br></br>
-            <h2>
-              I also really enjoy trying new foods with some of my favorite cuisines being Taiwanese, Korean, Peruvian, Ethiopian, and Venezuelan as some of my favorites that I have tried.
-              I love trying new restaurants and I love new recommendations for restaurants around California, Las Vegas, DC, or wherever I end up.
-            </h2>
-          </TextArea>
-        </div>
+          <h2></h2>
+      </div>
       <footer className="mb-6 flex flex-col items-center text-white">
         <p className="text-lg mb-2">Connect With Me</p>
         <div className="flex space-x-4 text-3xl">
