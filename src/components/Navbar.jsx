@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="text-2xl font-fredoka text-[#004B87]">Lukas Hu</div>
       <div className="space-x-4">
         <Link to="/">Home</Link>
-        <Link to="/About">About</Link>
+        <Link to="/About">Education</Link>
         <Link to="/Projects">Projects</Link>
         <Link to="/Resume">Resume</Link>
       </div>
