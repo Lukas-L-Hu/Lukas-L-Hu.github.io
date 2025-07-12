@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <section
       id="home"
-      className="w-full min-h-screen flex justify-center items-center text-white pb-24 px-6"
+      className="w-full min-h-screen flex justify-center items-center text-white px-6"
     >
       <div className="flex flex-row items-center justify-center w-full max-w-7xl px-6">
         <div className="w-1/2 p-4 flex flex-col justify-center mx-auto">
@@ -22,7 +22,7 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl md:text-7xl mb-4 text-left font-fredoka"
+            className="text-6xl md:text-8xl mb-4 text-left font-fredoka"
           >
             <Typewriter
               words={['Lukas Hu']}
@@ -136,6 +136,11 @@ export default function Home() {
         >
         Some of the Tools I Use
       </motion.h1>
+      <motion.p initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}>
+        *Certain technologies such as AWS or Java cannot be listed due to copyright issues
+      </motion.p>
       <TextArea>
           <div className="grid grid-cols-6 gap-10 justify-items-center mx-auto max-w-4xl px-4">
               <div className="w-1/4 flex justify-center w-32 h-32">
@@ -167,6 +172,12 @@ export default function Home() {
               </div>
               <div>
                 <Icons title="Tailwind CSS" svgPath="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+              </div>
+              <div>
+                <Icons title="MongoDB" svgPath="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" />
+              </div>
+              <div>
+                <Icons title="Git" svgPath="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
               </div>
           </div>
       </TextArea>
