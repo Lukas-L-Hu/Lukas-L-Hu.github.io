@@ -5,7 +5,13 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <div className="flex flex-col gap-y-16 pt-16 pb-20">
-    <TextArea heading="Education">
+      <div className="flex flex-col text-white items-center text-center mx-auto">
+      <motion.h1>Education</motion.h1>
+      <br></br>
+      <br></br>
+      <motion.h2 className="text-4xl">Below is my educational background, highlighting the coursework and experiences that helped shape my interest in software engineering.</motion.h2>
+      </div>
+    <TextArea heading="Degrees and Courses">
       <div className="flex flex-col md:flex-row items-center gap-6">
         {/* <img
           src={UciLogo}
@@ -20,11 +26,14 @@ export default function About() {
             B.S. in Computer Science / Intelligent Systems Specialization
           </h3>
           <p className="mt-2">2022 - 2025</p>
+          <br></br>
+          <p>At UC Irvine, I had the opportunity to deepen my understanding of core computer science concepts while exploring emerging technologies through research and personal projects.</p>
           <p className="mt-4 font-courier">
             Here are some of the courses I took at UCI:
           </p>
           <ul className="list-disc list-inside mt-2 font-courier">
             <li>ICS 31–33: Python Programming</li>
+              <ul>Beginner to intermediate courses that tackle Python basics, libraries, and object-oriented design</ul>
             <li>ICS 45C: C/C++ Programming</li>
             <li>ICS 46: Data Structures & Algorithms</li>
             <li>ICS 51: Computer Organization</li>
