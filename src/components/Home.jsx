@@ -13,11 +13,6 @@ export default function Home() {
     >
       <div className="flex flex-row items-center justify-center w-full max-w-7xl px-6">
         <div className="w-1/2 p-4 flex flex-col justify-center mx-auto">
-          {/* <motion.h3 initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}>
-              Hello! I am...
-          </motion.h3> */}
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -47,7 +42,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/lukaslhu" target="_blank" className="text-[#0077B5] hover:opacity-80">
               <FaLinkedin />
             </a>
-            <a href="#" className="text-[#E4405F] hover:opacity-80">
+            <a href="https://www.instagram.com/hu.man.lukas/" className="text-[#E4405F] hover:opacity-80">
               <FaInstagram />
             </a>
           </div>
@@ -77,15 +72,6 @@ export default function Home() {
         >
           About Me
         </motion.h1>
-        {/* <motion.p
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="text-2xl font-fredoka text-center mb-12"
-        >
-          Ever since I was at a young age, I have always had an interest in programming and using it to create amazing and impactful projects.<br />
-          I can speak JavaScript, Python, C/C++ proficiently.
-        </motion.p> */}
       </div>
       <div className="flex flex-col gap-y-16 pt-16 pb-20">
         <div className="text-2xl text-center px-4 max-w-7xl mx-auto">
