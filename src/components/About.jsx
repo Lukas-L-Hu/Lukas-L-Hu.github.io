@@ -6,10 +6,10 @@ export default function About() {
   return (
     <div className="flex flex-col gap-y-16 pt-16 pb-20">
       <div className="flex flex-col text-white items-center text-center mx-auto">
-      <motion.h1>Education</motion.h1>
+      <motion.h1 className="text-6xl font-fredoka">Education</motion.h1>
       <br></br>
       <br></br>
-      <motion.h2 className="text-4xl">Below is my educational background, highlighting the coursework and experiences that helped shape my interest in software engineering.</motion.h2>
+      <motion.h2 className="text-4xl font-fredoka">Below is my educational background, highlighting the coursework and experiences that helped shape my interest in software engineering.</motion.h2>
       </div>
     <TextArea heading="Degrees and Courses">
       <div className="flex flex-col md:flex-row items-center gap-6">
@@ -35,9 +35,13 @@ export default function About() {
             <li>ICS 31–33: Python Programming</li>
               <ul>Beginner to intermediate courses that tackle Python basics, libraries, and object-oriented design</ul>
             <li>ICS 45C: C/C++ Programming</li>
+              <ul>Introduction to C++ as a second language and basics of data structures and memory management</ul>
             <li>ICS 46: Data Structures & Algorithms</li>
+              <ul>Leveraging C++ to implement data structures and use of algorithms</ul>
             <li>ICS 51: Computer Organization</li>
+              <ul>Deeper dive into the connectino of computer system components and introduction to Assembly language</ul>
             <li>ICS 53: System Design</li>
+              <ul></ul>
             <li>CS 121: Information Retrieval</li>
             <li>CS 161: Algorithms</li>
             <li>CS 162: Format Languages and Automata</li>

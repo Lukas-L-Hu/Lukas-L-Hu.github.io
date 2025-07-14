@@ -34,7 +34,7 @@ export default function Project({ title, description, imageUrl, techStack }) {
         </div>
 
         {/* Back */}
-        <div className="flip-back bg-gray-100 shadow-lg rounded-lg p-4">
+        <div className="flip-back flex flex-col bg-gray-100 shadow-lg rounded-lg justify-center text-center items-center p-4">
           <h2 className="text-xl font-bold text-gray-800 mb-2"></h2>
           <p className="text-gray-700 text-center">{description}</p>
         </div>
