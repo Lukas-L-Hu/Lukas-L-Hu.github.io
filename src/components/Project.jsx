@@ -17,9 +17,9 @@ export default function Project({ title, description, imageUrl, techStack }) {
               className="w-full h-36 object-cover rounded mb-4"
             />
           )}
-          <h1 className="text-xl font-bold text-black-900 mb-2">{title}</h1>
+          <h1 className="text-4xl font-fredoka text-black mb-2">{title}</h1>
           {techStack && (
-            <ul className="flex flex-wrap justify-center gap-2">
+            <ul className="flex flex-wrap text-black justify-center gap-2">
               {techStack.map((tech, index) => (
                 <li
                   key={index}
@@ -30,13 +30,13 @@ export default function Project({ title, description, imageUrl, techStack }) {
               ))}
             </ul>
           )}
-          {!isFlipped && (<p className="mt-auto text-sm text-center text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click to see the description of the project</p>)}
+          {!isFlipped && (<p className="mt-auto text-sm text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click to see the description of the project</p>)}
         </div>
 
         {/* Back */}
         <div className="flip-back flex flex-col bg-gray-100 shadow-lg rounded-lg justify-center text-center items-center p-4">
           <h2 className="text-xl font-bold text-gray-800 mb-2"></h2>
-          <p className="text-lg text-gray-700 text-center">{description}</p>
+          <p className="text-lg text-black text-center">{description}</p>
         </div>
       </div>
     </div>
