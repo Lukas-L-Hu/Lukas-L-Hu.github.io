@@ -9,7 +9,7 @@ export default function Project({ title, description, imageUrl, techStack }) {
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div className={`flip-inner ${isFlipped ? "flipped" : ""}`}>
-        <div className="flip-front bg-white shadow-lg rounded-lg p-4 flex flex-col">
+        <div className="flip-front bg-gradient-to-br from-yellow-300 via-[#0064A4] to-[#00386c] shadow-lg rounded-lg p-4 flex flex-col">
           {imageUrl && (
             <img
               src={imageUrl}
@@ -36,7 +36,7 @@ export default function Project({ title, description, imageUrl, techStack }) {
         {/* Back */}
         <div className="flip-back flex flex-col bg-gray-100 shadow-lg rounded-lg justify-center text-center items-center p-4">
           <h2 className="text-xl font-bold text-gray-800 mb-2"></h2>
-          <p className="text-gray-700 text-center">{description}</p>
+          <p className="text-lg text-gray-700 text-center">{description}</p>
         </div>
       </div>
     </div>
