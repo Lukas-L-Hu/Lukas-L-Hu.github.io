@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
+    <>
     <div className="flex flex-col gap-y-16 pt-16 pb-20">
       <div className="flex flex-col text-white items-center text-center mx-auto">
       <motion.h1 className="text-6xl font-fredoka">Education</motion.h1>
@@ -59,5 +60,9 @@ export default function About() {
       </div>
     </TextArea>
     </div>
+    <footer className="mb-6 flex flex-col items-center text-white">
+        <p>Made by Lukas Hu</p>
+    </footer>
+    </>
   );
 }

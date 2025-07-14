@@ -21,7 +21,11 @@ export default function Projects({ ription, imageUrl, techStack, repoLink, liveL
             <Project title="ChordStore" techStack={["React.js", "HTML/CSS"]} description={"Built with React.js, this app lets music producers easily save and revisit their favorite chord progressions, acting as a creative notebook to keep ideas organized and accessible for future projects."}/>
             <Project title="Escape-Vape" techStack={["React.js", "Express.js", "HTML", "Bootstrap CSS"]} description={"A full-stack application that offers a private, supportive space for those struggling with nicotine addiction. Through daily logs, gamified coping strategies, and virtual access to therapists, users can pursue recovery at their own pace and comfort level."}/>
             </div>
+            
         </div>
+        <footer className="mb-6 flex flex-col items-center text-white">
+            <p>Made by Lukas Hu</p>
+        </footer>
         </>
     )
 }
