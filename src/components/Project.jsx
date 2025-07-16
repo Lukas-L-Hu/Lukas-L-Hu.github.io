@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Project({ title, description, imageUrl, techStack }) {
+export default function Project({ title, description, imageUrl, techStack, date }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -18,12 +18,15 @@ export default function Project({ title, description, imageUrl, techStack }) {
             />
           )}
           <h1 className="text-4xl font-fredoka text-black mb-2">{title}</h1>
+          {date && (
+            <p className="text-lg text-black mb-6">{date}</p>
+          )}
           {techStack && (
-            <ul className="flex flex-wrap text-black justify-center gap-2">
+            <ul className="flex flex-wrap text-black justify-center gap-2 mb-6">
               {techStack.map((tech, index) => (
                 <li
                   key={index}
-                  className="bg-gray-200 text-sm px-2 py-1 rounded"
+                  className="bg-gray-200 text-lg px-2 py-1 rounded"
                 >
                   {tech}
                 </li>

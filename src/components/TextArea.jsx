@@ -6,9 +6,9 @@ export default function TextArea({ heading, children }) {
         <h1 className="text-4xl font-fredoka text-white mt-0">{heading}</h1>
       </div>
 
-      <div className="mt-8 p-6 rounded-xl shadow-lg bg-[#f4e2d8] max-w-4xl mx-auto text-black">
+      <div className="mt-8 p-6 rounded-xl shadow-lg bg-white max-w-4xl mx-auto text-black">
         {typeof children === "string" ? (
-          <div className="whitespace-pre-wrap bg-white p-6 rounded-md shadow-md text-gray-900">
+          <div className="whitespace-pre-wrap bg-white p-6 rounded-md shadow-md text-black">
             {children}
           </div>
         ) : (
