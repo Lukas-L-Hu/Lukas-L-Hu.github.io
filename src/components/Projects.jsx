@@ -12,7 +12,8 @@ export default function Projects({ ription, imageUrl, techStack, repoLink, liveL
             <motion.h2 
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }} className="text-4xl font-bold my-8 pb-24 text-center text-white">Here are some of the current and past projects that I have worked on! Will be updated as I develop more projects!<br /><br /> Some of these projects are public on my Github here</motion.h2>
+            transition={{ duration: 1 }} className="text-4xl font-bold my-8 pb-24 text-center text-white">Here are some of the current and past projects that I have worked on! Will be updated as I develop more projects!<br /><br /> 
+            Some of these projects are public on my Github <a href="https://github.com/Lukas-L-Hu" target="_blank" className="font-bold underline text-white hover:opacity-80">here</a></motion.h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 pb-24 text-center">
             <Project title="AlgoNotes" date={["2025"]} techStack={["AWS", "Flask", "HTML/CSS"]} description={"A Flask application that calls on AWS Bedrock to give a summary of the raw algorithm notes that are given and recommed similar topics to study. Users can use this app to store notes relating to DSA concepts and receive in-depth explanation to notes taken."} />
             <Project title="AI Wordle" date={["2025"]} techStack={["Python"]} description={"An automated AI agent for solving Wordle in as efficient amount of guesses as possible. This project uses an entropy-based strategy, leveraging information gain to systematically reduce uncertainty and make the most optimal Wordle guesses."}/>
