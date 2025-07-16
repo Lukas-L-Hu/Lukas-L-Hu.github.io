@@ -9,7 +9,6 @@ export default function Resume() {
     >
       <div className="flex flex-row items-center justify-between w-full max-w-7xl px-6">
         
-        {/* Left side: Resume image aligned left in its column */}
         <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -22,7 +21,6 @@ export default function Resume() {
           />
         </motion.div>
 
-        {/* Right side: Text content */}
         <div className="w-1/2 p-4 flex flex-col justify-center text-left h-[600px]">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}

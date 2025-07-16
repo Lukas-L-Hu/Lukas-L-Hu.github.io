@@ -1,8 +1,8 @@
-import TextArea from "./TextArea";
+import TextArea from "./TextArea.jsx";
 import Icons from "./Icons.jsx";
 import { motion } from 'framer-motion';
 
-export default function About() {
+export default function Education() {
   return (
     <>
     <div className="flex flex-col gap-y-16 pt-16 pb-20">
