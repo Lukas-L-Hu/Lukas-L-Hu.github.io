@@ -1,12 +1,36 @@
 export default function Resume() {
-    return (
-        <div className="flex flex-col items-center px-4 pt-16 pb-12">
-        <img
+  return (
+    <section
+      className="w-full flex justify-center items-center text-white px-6"
+      style={{ minHeight: "calc(100vh - 72px)" }}
+    >
+      <div className="flex flex-row items-center justify-center w-full max-w-7xl px-6">
+        
+        {/* Left side: Resume image */}
+        <div className="w-1/2 p-4 flex justify-center">
+          <img
             src="/picture4resumepage.jpg"
             alt="Resume Photo"
-            className="w-64 h-auto rounded-lg shadow-lg"
-        />
-        <h1 className="text-3xl font-bold mt-4">My Resume</h1>
+            className="w-72 h-auto rounded-lg shadow-lg"
+          />
         </div>
-    )
+
+        {/* Right side: Text content */}
+        <div className="w-1/2 p-4 flex flex-col justify-center text-left">
+          <h1 className="text-5xl md:text-6xl font-bold font-fredoka mb-4">My Resume</h1>
+          <p className="text-xl md:text-2xl font-light">
+            Explore my experiences, technical skills, and projects that reflect my journey as a software engineer. Click the button below to download my full resume.
+          </p>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            className="inline-block mt-6 px-6 py-3 bg-white text-black text-center font-semibold rounded hover:bg-gray-300 transition"
+          >
+            View Resume PDF
+          </a>
+        </div>
+
+      </div>
+    </section>
+  );
 }
