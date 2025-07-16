@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+
+
 export default function Resume() {
   return (
     <section
@@ -7,22 +10,34 @@ export default function Resume() {
       <div className="flex flex-row items-center justify-between w-full max-w-7xl px-6">
         
         {/* Left side: Resume image aligned left in its column */}
-        <div className="w-1/2 p-4 flex items-start">
+        <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="w-1/2 p-4 flex items-start">
           <img
             src="/picture4resumepage.jpg"
             alt="Resume Photo"
             className="w-auto h-[600px] rounded-lg shadow-lg"
           />
-        </div>
+        </motion.div>
 
         {/* Right side: Text content */}
         <div className="w-1/2 p-4 flex flex-col justify-center text-left h-[600px]">
-          <h1 className="text-5xl md:text-6xl text-center font-bold font-fredoka mb-4">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            className="text-5xl md:text-6xl text-center font-bold font-fredoka mb-4">
             My Resume
-          </h1>
-          <p className="text-xl md:text-2xl font-light">
+          </motion.h1>
+          <motion.p 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          className="text-xl md:text-2xl font-light">
             Explore my experiences, technical skills, and projects that reflect my journey as a software engineer. Click the button below to view my full resume.
-          </p>
+          </motion.p>
           <a
             href="/resume.pdf"
             target="_blank"

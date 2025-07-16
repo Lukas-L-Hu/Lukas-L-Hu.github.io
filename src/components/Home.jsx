@@ -10,6 +10,7 @@ export default function Home() {
     <section
       id="home"
       className="w-full min-h-screen flex justify-center items-center text-white px-6"
+      style={{ minHeight: "calc(100vh - 72px)" }}
     >
       <div className="flex flex-row items-center justify-center w-full max-w-7xl px-6">
         <div className="w-1/2 p-4 flex flex-col justify-center mx-auto">
