@@ -21,15 +21,16 @@ export default function Resume() {
             My Resume
           </h1>
           <p className="text-xl md:text-2xl font-light">
-            Explore my experiences, technical skills, and projects that reflect my journey as a software engineer. Click the button below to download my full resume.
+            Explore my experiences, technical skills, and projects that reflect my journey as a software engineer. Click the button below to view my full resume.
           </p>
           <a
             href="/resume.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block mt-6 px-6 py-3 bg-white text-black text-center font-semibold rounded hover:bg-gray-300 transition"
-          >
+            >
             View Resume PDF
-          </a>
+        </a>
         </div>
 
       </div>
