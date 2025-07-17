@@ -23,7 +23,7 @@ const experiences = {
       title: 'ML Research Assistant',
       company: 'UC Irvine',
       date: '2022 – 2023',
-      details: ['Worked on CRF models', 'Published in XYZ Conference'],
+      details: ["Over the course of my second academic year of college at UC Irvine, I worked with a team under a professor to build machine learning models using Scikit-Learn and XGBoost that predict vehicle trajectories more accurately and reliably. I also cleaned and organized raw vehicle data using NumPy and Pandas to improve data quality and help the models learn better."],
     },
   ],
   Teaching: [
