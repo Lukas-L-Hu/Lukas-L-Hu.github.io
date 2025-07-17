@@ -49,7 +49,7 @@ export default function ExperienceTabs() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`text-xl font-semibold transition-colors ${
-              activeTab === tab ? 'text-yellow-300' : 'text-gray-400'
+              activeTab === tab ? 'text-yellow-300' : 'text-black'
             }`}
           >
             {tab}
@@ -71,14 +71,19 @@ export default function ExperienceTabs() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className={`gap-8 ${
+            experiences[activeTab].length === 1
+                ? 'flex justify-center'
+                : 'grid grid-cols-1 md:grid-cols-2'
+            }`}
+
         >
           {experiences[activeTab].map((exp, index) => (
             <div
               key={index}
               className="bg-[#004B87] rounded-xl p-6 shadow-md"
             >
-              <h3 className="text-2xl font-bold">{exp.title}</h3>
+              <h3 className="text-2xl font-fredoka">{exp.title}</h3>
               <p className="text-lg italic mb-2">{exp.company} — {exp.date}</p>
               <ul className="list-disc list-inside text-left space-y-1">
                 {exp.details.map((item, i) => (
