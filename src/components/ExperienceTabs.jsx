@@ -9,14 +9,14 @@ const experiences = {
       title: 'Software Engineering Intern',
       company: 'WWT',
       date: 'Summer 2024',
-      details: ['Built Flask APIs', 'Used React for dashboards'],
+      details: ["Over the course of 12 weeks, I worked on the backend and database infrastructure, primarily developing and maintaining Node.js REST APIs. My responsibilities included debugging, refining the SQL queries to speed up sales data retrieval, and leveraging Jenkins to deploy APIs. I collaborated with a cross-functional team using agile sprint methodologies and wrote clean, readable code with a focus on reliability and maintainability."]
     },
     {
       title: 'Cybersecurity Analyst Intern',
       company: 'Midnight Ink',
       date: '2024-2025',
-      details: ['Monitored network activity', 'Audited security logs'],
-    },
+      details: ["I worked closely with assessors to identify and document security and compliance gaps in client internal systems, aligning our findings with NIST 800-171 standards. After pinpointing these gaps, I helped explore and implement remediation strategies to strengthen the overall security posture and reduce risk within the client’s environment."]
+    }
   ],
   Research: [
     {
@@ -87,7 +87,7 @@ export default function ExperienceTabs() {
               <p className="text-lg italic mb-2">{exp.company} — {exp.date}</p>
               <ul className="list-disc list-inside text-left space-y-1">
                 {exp.details.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <p key={i}>{item}</p>
                 ))}
               </ul>
             </div>
