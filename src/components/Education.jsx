@@ -54,7 +54,7 @@ export default function Education() {
             </li>
             <li>
               <span className="font-semibold">ICS 46: Data Structures & Algorithms</span><br />
-              Implementing data structures and analyzing algorithms using C++.
+              Implementation of data structures and analyzing algorithms using C++.
             </li>
             <li>
               <span className="font-semibold">ICS 51: Computer Organization</span><br />
@@ -62,19 +62,23 @@ export default function Education() {
             </li>
             <li>
               <span className="font-semibold">ICS 53: System Design</span><br />
-              
+              Deep dive into the principles of the system design of software such as operating systems, compilers, and networking. Introduction to complex concepts such as memory management, concurrency, and network communication.
             </li>
             <li>
-              <span className="font-semibold">CS 121: Information Retrieval</span>
+              <span className="font-semibold">CS 121: Information Retrieval</span><br />
+              Course that introduces information retrieval concepts and applications such as indexing, retrieval, and web crawlers.
             </li>
             <li>
-              <span className="font-semibold">CS 161: Algorithms</span>
+              <span className="font-semibold">CS 161: Algorithms</span><br />
+              A look into the efficiency and design of algorithms such as Divide and Conquer, Dynamic Programming, and Time/Space Complexity.
             </li>
             <li>
-              <span className="font-semibold">CS 162: Formal Languages & Automata</span>
+              <span className="font-semibold">CS 162: Formal Languages & Automata</span><br />
+              Theoretical aspects of recognizing languages by grammar and automata. Introduction to regular and context-free languages and the definition of computability.
             </li>
             <li>
-              <span className="font-semibold">CS 171 & 178: AI & Machine Learning</span>
+              <span className="font-semibold">CS 171 & 178: AI & Machine Learning</span><br />
+              The principles of artificial intelligence and machine learning and their practical and theoretical applications in the real word.
             </li>
           </ul>
 
