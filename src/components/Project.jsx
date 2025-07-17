@@ -36,7 +36,6 @@ export default function Project({ title, description, imageUrl, techStack, date 
           {!isFlipped && (<p className="mt-auto text-sm text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Click to see the description of the project</p>)}
         </div>
 
-        {/* Back */}
         <div className="flip-back flex flex-col bg-gray-100 shadow-lg rounded-lg justify-center text-center items-center p-4">
           <h2 className="text-xl font-bold text-gray-800 mb-2"></h2>
           <p className="text-lg text-black text-center">{description}</p>

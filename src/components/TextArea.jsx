@@ -2,7 +2,7 @@ export default function TextArea({ heading, children }) {
   return (
     <div className="education-section">
       <div className="flex flex-col items-center justify-center text-center">
-        <div className="heading-img-div mb-4">{/* optional image */}</div>
+        <div className="heading-img-div mb-4"></div>
         <h1 className="text-4xl font-fredoka text-white mt-0">{heading}</h1>
       </div>
 

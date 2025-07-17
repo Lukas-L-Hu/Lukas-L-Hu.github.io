@@ -42,7 +42,6 @@ export default function ExperienceTabs() {
   return (
     <div className="w-full flex flex-col items-center px-4 pt-16 pb-24 text-white">
 
-      {/* Tabs */}
       <div className="flex justify-center space-x-8 mb-12 relative">
         {tabs.map(tab => (
           <button
@@ -63,7 +62,6 @@ export default function ExperienceTabs() {
         ))}
       </div>
 
-      {/* Content */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}

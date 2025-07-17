@@ -5,7 +5,6 @@ export default function Experience() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
-        {/* Header section */}
         <div className="flex flex-col items-center px-4 pt-16">
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
@@ -24,13 +23,9 @@ export default function Experience() {
             Below you can take a look at my past work and internship experiences.
           </motion.h2>
         </div>
-
-        {/* Experience content */}
         <div className="w-full flex justify-center px-4 pb-12">
           <ExperienceTabs />
         </div>
-
-        {/* Footer */}
         <footer className="mt-auto mb-6 flex flex-col items-center text-white">
           <p>Made by Lukas Hu</p>
         </footer>
