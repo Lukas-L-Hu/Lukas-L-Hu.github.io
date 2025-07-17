@@ -22,7 +22,7 @@ const experiences = {
     {
       title: 'ML Research Assistant',
       company: 'UC Irvine',
-      date: '2022 – 2023',
+      date: '2023 – 2024',
       details: ["Over the course of my second academic year of college at UC Irvine, I worked with a team under a professor to build machine learning models using Scikit-Learn and XGBoost that predict vehicle trajectories more accurately and reliably. I also cleaned and organized raw vehicle data using NumPy and Pandas to improve data quality and help the models learn better."],
     },
   ],
@@ -30,8 +30,8 @@ const experiences = {
     {
       title: 'CS Learning Assistant',
       company: 'UCI',
-      date: '2021 – 2022',
-      details: ['Helped 100+ students', 'Led weekly lab sessions'],
+      date: '2023 – 2025',
+      details: ["My main job was to assist students in their efforts to improve their knowledge in Computer Science concepts such as object-oriented programming, data structures, algorithms, and automata as well as help them prepare for testing. I also proctored exams to ensure a fair testing environment for the students."],
     },
   ],
 };
