@@ -43,53 +43,53 @@ export default function Education() {
           </p>
 
           <p className="mt-6 font-semibold underline">Courses taken:</p>
-          <ul className="list-disc list-inside space-y-2 mt-2">
-            <li>
+          <div className="space-y-4 mt-2">
+            <div>
               <span className="font-semibold">ICS 31–33: Python Programming</span><br />
               Beginner to intermediate courses covering Python basics, libraries, and object-oriented design.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">ICS 45C: C/C++ Programming</span><br />
               Introduction to C++ and fundamentals of memory management and data structures.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">ICS 46: Data Structures & Algorithms</span><br />
               Implementation of data structures and analyzing algorithms using C++.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">ICS 51: Computer Organization</span><br />
               Understanding system-level components and Assembly programming.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">ICS 53: System Design</span><br />
               Deep dive into the principles of the system design of software such as operating systems, compilers, and networking. Introduction to complex concepts such as memory management, concurrency, and network communication.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">CS 121: Information Retrieval</span><br />
               Course that introduces information retrieval concepts and applications such as indexing, retrieval, and web crawlers.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">CS 161: Algorithms</span><br />
               A look into the efficiency and design of algorithms such as Divide and Conquer, Dynamic Programming, and Time/Space Complexity.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">CS 162: Formal Languages & Automata</span><br />
               Theoretical aspects of recognizing languages by grammar and automata. Introduction to regular and context-free languages and the definition of computability.
-            </li>
-            <li>
+            </div>
+            <div>
               <span className="font-semibold">CS 171 & 178: AI & Machine Learning</span><br />
               The principles of artificial intelligence and machine learning and their practical and theoretical applications in the real word.
-            </li>
-          </ul>
+            </div>
+          </div>
 
-          <a
+          {/* <a
             href="https://ics.uci.edu/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-6 px-4 py-2 bg-[rgba(40,200,149,0.3)] rounded text-[#5d2a42] font-semibold"
+            className="inline-block mt-6 px-4 py-2 bg-[#FFD100] rounded text-black font-semibold"
           >
             Visit Website
-          </a>
+          </a> */}
         </div>
       </motion.div>
     </div>
