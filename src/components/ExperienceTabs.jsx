@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const tabs = ['Internships', 'Research', 'Teaching'];
+const tabs = ['Internships', 'Research', 'Academia'];
 
 const experiences = {
   Internships: [
@@ -26,7 +26,7 @@ const experiences = {
       details: ["Over the course of my second academic year of college at UC Irvine, I worked with a team under a professor to build machine learning models using Scikit-Learn and XGBoost that predict vehicle trajectories more accurately and reliably. I also cleaned and organized raw vehicle data using NumPy and Pandas to improve data quality and help the models learn better."],
     },
   ],
-  Teaching: [
+  Academia: [
     {
       title: 'CS Learning Assistant',
       company: 'UCI',
