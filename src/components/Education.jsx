@@ -49,7 +49,7 @@ export default function Education() {
               Beginner to intermediate courses covering Python basics, libraries, and object-oriented design.
             </div>
             <div>
-              <span className="font-semibold">ICS 45C: C/C++ Programming</span><br />
+              <span className="font-semibold">ICS 45C: C/C++ Programming hello</span><br />
               Introduction to C++ and fundamentals of memory management and data structures.
             </div>
             <div>
