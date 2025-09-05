@@ -42,7 +42,7 @@ export default function ExperienceTabs() {
   return (
     <div className="w-full flex flex-col items-center px-4 pt-16 pb-24 text-white">
 
-      <div className="flex justify-center space-x-8 mb-12 relative">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 relative">
         {tabs.map(tab => (
           <button
             key={tab}
@@ -71,7 +71,7 @@ export default function ExperienceTabs() {
           transition={{ duration: 0.4 }}
           className={`gap-8 ${
             experiences[activeTab].length === 1
-                ? 'flex justify-center'
+                ? 'grid grid-cols-1 md:flex md:justify-center'
                 : 'grid grid-cols-1 md:grid-cols-2'
             }`}
 
@@ -79,7 +79,7 @@ export default function ExperienceTabs() {
           {experiences[activeTab].map((exp, index) => (
             <div
               key={index}
-              className="bg-[#004B87] rounded-xl p-6 shadow-md"
+              className="bg-[#004B87] rounded-xl p-4 sm:p-6 shadow-md w-full"
             >
               <h3 className="text-2xl font-fredoka">{exp.title}</h3>
               <p className="text-lg italic mb-2">{exp.company} — {exp.date}</p>

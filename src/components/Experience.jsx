@@ -10,7 +10,7 @@ export default function Experience() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl font-fredoka pb-8 text-center text-white"
+            className="text-4xl sm:text-5xl md:text-6xl font-fredoka pb-8 text-center text-white"
           >
             Experience
           </motion.h1>
@@ -18,7 +18,7 @@ export default function Experience() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl font-fredoka pb-12 text-center text-white"
+            className="text-xl sm:text-2xl md:text-4xl font-fredoka pb-12 text-center text-white"
           >
             Below you can take a look at my past work and internship experiences.
           </motion.h2>
