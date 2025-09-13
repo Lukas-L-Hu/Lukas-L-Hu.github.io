@@ -4,29 +4,29 @@ import { motion } from 'framer-motion';
 export default function Resume() {
   return (
     <section
-      className="w-full flex justify-center items-center text-white px-6"
+      className="w-full flex justify-center items-center text-white px-6 max-sm:pt-8 max-sm:pb-8"
       style={{ minHeight: "calc(100vh - 72px)" }}
     >
-      <div className="flex flex-row items-center justify-between w-full max-w-7xl px-6">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         
         <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="w-1/2 p-4 flex items-start">
+            className="w-full md:w-1/2 p-4 flex justify-center md:justify-start">
           <img
             src="/picture4resumepage.jpg"
             alt="Resume Photo"
-            className="w-auto h-[600px] rounded-lg shadow-lg"
+            className="w-full max-w-md md:w-auto md:h-[600px] rounded-lg shadow-lg"
           />
         </motion.div>
 
-        <div className="w-1/2 p-4 flex flex-col justify-center text-left h-[600px]">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className="text-5xl md:text-6xl text-center font-bold font-fredoka mb-4">
+            className="text-5xl md:text-6xl text-center md:text-left font-bold font-fredoka mb-4">
             My Resume
           </motion.h1>
           <motion.p 
