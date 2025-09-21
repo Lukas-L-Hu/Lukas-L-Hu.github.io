@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function Resume() {
   return (
     <section
-      className="w-full flex justify-center items-center text-white px-6 max-sm:pt-8 max-sm:pb-8"
+      className="w-full flex justify-center items-center text-white px-6 pt-16 md:pt-0 pb-8"
       style={{ minHeight: "calc(100vh - 72px)" }}
     >
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
@@ -26,7 +26,7 @@ export default function Resume() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className="text-5xl md:text-6xl text-center md:text-left font-bold font-fredoka mb-4">
+            className="text-5xl md:text-6xl font-bold font-fredoka mb-6 md:mb-4">
             My Resume
           </motion.h1>
           <motion.p 
