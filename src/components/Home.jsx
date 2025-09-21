@@ -8,62 +8,61 @@ export default function Home() {
   return (
     <>
     <section
-      id="home"
-      className="w-full min-h-screen flex justify-center items-center text-white px-6"
-      style={{ minHeight: "calc(100vh - 72px)" }}
-    >
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1400px] px-6 md:px-12 lg:px-20 py-6 md:py-12 lg:py-20">
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center mx-auto text-center md:text-left">
-          <motion.h1
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="text-6xl md:text-8xl mb-4 text-left font-fredoka text-center md:text-left"
-          >
-            <Typewriter
-              words={['Lukas Hu']}
-              loop={false}
-              cursor
-              cursorStyle="_"
-              typeSpeed={100}
+        id="home"
+        className="w-full min-h-screen flex justify-center items-center text-white px-6"
+        style={{ minHeight: "calc(100vh - 72px)" }}
+      >
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6">
+          <div className="w-full md:w-1/2 p-4 flex flex-col justify-center mx-auto">
+            <motion.h1
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="text-6xl md:text-8xl mb-4 text-center md:text-left font-fredoka pt-12 md:pt-0"
+            >
+              <Typewriter
+                words={['Lukas Hu']}
+                loop={false}
+                cursor
+                cursorStyle="_"
+                typeSpeed={100}
+              />
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="text-xl md:text-4xl mb-4 text-center md:text-left font-fredoka"
+            >
+              Dedicated software engineer seeking to make a positive impact with the tools at his disposal. Constantly looking for ways to innovate and add more skills to his arsenal.
+            </motion.p>
+            <div className="flex justify-center md:justify-start space-x-4 text-3xl">
+              <a href="https://github.com/Lukas-L-Hu" target="_blank" className="text-[#181717] hover:opacity-80">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/lukaslhu" target="_blank" className="text-[#0077B5] hover:opacity-80">
+                <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/hu.man.lukas/" className="text-[#E4405F] hover:opacity-80">
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 p-4 mt-6 md:mt-0">
+            <motion.img
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              src="/bubbles.jpg"
+              alt="Decorative"
+              className="w-full h-[350px] md:h-[450px] object-cover rounded-lg shadow-lg"
             />
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="text-xl md:text-4xl mb-4 text-left font-fredoka text-center md:text-left"
-          >
-            Dedicated software engineer seeking to make a positive impact with the tools at his disposal. Constantly looking for ways to innovate and add more skills to his arsenal.
-          </motion.p>
-          <div className="flex justify-center md:justify-start space-x-4 text-3xl">
-            <a href="https://github.com/Lukas-L-Hu" target="_blank" className="text-[#181717] hover:opacity-80">
-              <FaGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/lukaslhu" target="_blank" className="text-[#0077B5] hover:opacity-80">
-              <FaLinkedin />
-            </a>
-            <a href="https://www.instagram.com/hu.man.lukas/" className="text-[#E4405F] hover:opacity-80">
-              <FaInstagram />
-            </a>
           </div>
         </div>
-        <div className="w-full md:w-1/2 p-4 flex justify-center">
-          <motion.img
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            src="/bubbles.jpg"
-            alt="Decorative"
-            className="w-full h-[350px] object-cover rounded-lg shadow-lg"
-            // className="w-80 h-auto object-cover rounded-lg shadow-lg"
-          />
-        </div>
-      </div>
     </section>
     <section
       id="about-me"
-      className="flex flex-col items-center pt-2 text-white px-6"
+      className="flex flex-col items-center pt-16 md:pt-2 text-white px-6"
     >
       <div className="w-full max-w-4xl mx-auto">
         <motion.h1
