@@ -1,22 +1,28 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const tabs = ['Internships', 'Research', 'Academia'];
+const tabs = ['Work', 'Research', 'Academia'];
 
 const experiences = {
-  Internships: [
+  Work: [
+    // {
+    //   title: 'Associate Software Engineer',
+    //   company: 'CareFirst BlueCross BlueShield',
+    //   date: 'December 2025-present',
+    //   details: [""]
+    // },
     {
       title: 'Software Engineering Intern',
-      company: 'WWT',
+      company: 'Cloud2 Labs',
+      date: 'Fall 2025',
+      details: ["I worked on AI applications to support pre-sales enablement for enterprise customers, building a FastAPI powered backend with a React.js front-end. My role in the development of these applications included containerization with Docker as well as the successful implementation of text-to-speech and retrieval augmented capabilities."]
+    },
+    {
+      title: 'Software Engineering Intern',
+      company: 'World Wide Technology',
       date: 'Summer 2024',
       details: ["Over the course of 12 weeks, I worked on the backend and database infrastructure, primarily developing and maintaining Node.js REST APIs. My responsibilities included debugging, refining the SQL queries to speed up sales data retrieval, and leveraging Jenkins to deploy APIs. I collaborated with a cross-functional team using agile sprint methodologies and wrote clean, readable code with a focus on reliability and maintainability."]
     },
-    {
-      title: 'Cybersecurity Analyst Intern',
-      company: 'Midnight Ink',
-      date: '2024-2025',
-      details: ["I worked closely with assessors to identify and document security and compliance gaps in client internal systems, aligning our findings with NIST 800-171 standards. After pinpointing these gaps, I helped explore and implement remediation strategies to strengthen the overall security posture and reduce risk within the client’s environment."]
-    }
   ],
   Research: [
     {
@@ -37,7 +43,7 @@ const experiences = {
 };
 
 export default function ExperienceTabs() {
-  const [activeTab, setActiveTab] = useState('Internships');
+  const [activeTab, setActiveTab] = useState('Work');
 
   return (
     <div className="w-full flex flex-col items-center px-4 pt-16 pb-24 text-white">
