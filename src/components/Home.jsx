@@ -79,7 +79,7 @@ export default function Home() {
           <motion.h2
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}>Hi! My name is Lukas Hu and I am an aspiring software engineer. Originally from the Washington, D.C. area, I have currently been living on the West Coast in both Las Vegas, NV and Orange County, CA.
+          transition={{ duration: 1 }}>Hi! My name is Lukas Hu and I am currently a software engineer for CareFirst BlueCross BlueShield in the Washington D.C. metropolitan area where I develop testing frameworks and applications using Java Spring Boot. I also leverage tools such as Docker, AWS, and Kubernetes to support CareFirst's cloud migration effort.
           </motion.h2>
           <br></br>
           <motion.h2
@@ -90,12 +90,13 @@ export default function Home() {
             I possess skills such as Python, JavaScript, C++, Java, and SQL which I have been able to apply through various projects and real world experiences.
           </motion.h2>
           <br></br>
-          <motion.h2
+          {/* <motion.h2
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}>I previously interned as a software engineer at World Wide Technology where I developed and maintained APIs for backend systems using Node.js and Vue.js.
-            Throughout this experience, I learned to write clean, testable code while collaborating in an agile environment.
-          </motion.h2>
+          transition={{ duration: 1 }}> */}
+            {/* I previously interned as a software engineer at World Wide Technology where I developed and maintained APIs for backend systems using Node.js and Vue.js.
+            Throughout this experience, I learned to write clean, testable code while collaborating in an agile environment. */}
+          {/* </motion.h2> */}
           <br></br>
           <motion.h2
           initial={{ opacity: 0, x: -50 }}
