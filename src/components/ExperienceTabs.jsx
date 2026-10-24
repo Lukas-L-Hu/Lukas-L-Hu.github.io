@@ -5,17 +5,17 @@ const tabs = ['Work', 'Research', 'Academia'];
 
 const experiences = {
   Work: [
-    // {
-    //   title: 'Associate Software Engineer',
-    //   company: 'CareFirst BlueCross BlueShield',
-    //   date: 'December 2025-present',
-    //   details: [""]
-    // },
+    {
+      title: 'Associate Software Engineer',
+      company: 'CareFirst BlueCross BlueShield',
+      date: 'December 2025-present',
+      details: ["Supported the development of automation frameworks and database validation efforts, utilizing TypeScript, Java, Postgres, and MongoDB."]
+    },
     {
       title: 'Software Engineering Intern',
       company: 'Cloud2 Labs',
       date: 'Fall 2025',
-      details: ["I worked on AI applications to support pre-sales enablement for enterprise customers, building a FastAPI powered backend with a React.js front-end. My role in the development of these applications included containerization with Docker as well as the successful implementation of text-to-speech and retrieval augmented capabilities."]
+      details: ["I worked on AI applications to support pre-sales enablement for enterprise customers, building a FastAPI powered backend with a React.js front-end. My role in the development of these applications included containerization with Docker as well as the successful implementation of text-to-speech and retrieval augmented generation capabilities."]
     },
     {
       title: 'Software Engineering Intern',
